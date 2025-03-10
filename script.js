@@ -9,7 +9,6 @@ var conn = mysql.createConnection({
     database: "projekt_porownywanie"
 })
  
- 
 conn.connect((err)=>{
     if(err){
         console.log("nie połączono z bazą")

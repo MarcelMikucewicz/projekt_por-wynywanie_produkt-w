@@ -12,15 +12,33 @@
     height: 500px;
     width: 15%;
     background-color: beige;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
     
 }
 #main{
     width: 85%;
     height: 500px;
-    background-color: antiquewhite;
+    background-color: cornflowerblue;
     float: left;
     
 }
 #footer{
 background-color: beige;
+font-weight: bold;
+
+}
+button{
+    border-radius: 10px;
+    height: 30px;
+    width: auto; 
+    background-color: brown;
+    color: beige;
+
+}
+button:hover{
+    background-color: cadetblue;
+    color: crimson;
+    
 }
