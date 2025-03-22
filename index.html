@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona</title>
+    <title>Porównywarka Cen</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="header">
-    <h1>Strona porównująca ceny produktów</h1>
-</div>
-<div id="left">
-    <form action="">
-        <p>Wybierz produkt</p>
-    <select name="list" id="list">
-    </select><br>
-    <button>Porównaj</button>
+    <h1>Porównywarka Cen</h1>
+
+    <label for="productSelect">Wybierz produkt:</label>
+    <select id="productSelect">
+        <option value="">-- Wybierz produkt --</option>
+    </select>
+
+    <div id="storeList"></div>
+
+    <h2>Zamów produkt</h2>
+    <form id="orderForm">
+        <input type="hidden" id="selectedProductId">
+        <input type="hidden" id="selectedStoreId">
+
+        <label>Imię i nazwisko:</label>
+        <input type="text" id="customerName" required>
+
+        <label>Adres:</label>
+        <input type="text" id="customerAddress" required>
+
+        <label>Telefon:</label>
+        <input type="tel" id="customerPhone" required>
+
+        <button type="submit">Zamów</button>
     </form>
-</div>
-<div id="main">
 
+    <p id="orderMessage"></p>
 
-</div>
-<div id="footer">
-    <div>
-    <h1>Kontakt:</h1>
-    <p>email: obsluga.klienta@gmail.com</p>
-    <p>telefon: 123456789</p>
-    
-</div>
-
-</div>
-<script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
