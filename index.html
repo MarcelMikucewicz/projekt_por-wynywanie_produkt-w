@@ -2,39 +2,38 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porównywarka Cen</title>
+    <title>Porównywarka produktów</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Porównywarka Cen</h1>
+    <div class="container">
+        <h1>Porównywarka produktów</h1>
 
-    <label for="productSelect">Wybierz produkt:</label>
-    <select id="productSelect">
-        <option value="">-- Wybierz produkt --</option>
-    </select>
+        <label for="productSelect">Wybierz produkt:</label>
+        <select id="productSelect"></select>
 
-    <div id="storeList"></div>
+        <div id="storeOptions" style="display: none;">
+            <label for="storeSelect">Wybierz sklep:</label>
+            <select id="storeSelect"></select>
 
-    <h2>Zamów produkt</h2>
-    <form id="orderForm">
-        <input type="hidden" id="selectedProductId">
-        <input type="hidden" id="selectedStoreId">
+            <label for="quantity">Podaj ilość:</label>
+            <input type="number" id="quantity" min="1">
 
-        <label>Imię i nazwisko:</label>
-        <input type="text" id="customerName" required>
+            <h2>Dane klienta</h2>
+            <label for="name">Imię:</label>
+            <input type="text" id="name">
 
-        <label>Adres:</label>
-        <input type="text" id="customerAddress" required>
+            <label for="address">Adres:</label>
+            <input type="text" id="address">
 
-        <label>Telefon:</label>
-        <input type="tel" id="customerPhone" required>
+            <label for="phone">Numer telefonu:</label>
+            <input type="text" id="phone">
 
-        <button type="submit">Zamów</button>
-    </form>
+            <button onclick="orderProduct()">Zamów</button>
+        </div>
+    </div>
 
-    <p id="orderMessage"></p>
-
-    <script src="script.js"></script>
+    
+    <script src="app.js"></script>
 </body>
 </html>

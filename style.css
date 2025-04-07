@@ -1,46 +1,48 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 0;
-}
-
-h1, h2 {
+    margin: 30px;
+    background-color: #f4f4f4;
     color: #333;
 }
 
-label {
-    display: block;
-    margin-top: 10px;
+h2, h3 {
+    color: #444;
 }
 
-select, input, button {
-    margin-top: 5px;
-    padding: 8px;
-    width: 100%;
+select, input[type="text"], input[type="number"] {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: block;
 }
 
 button {
-    background-color: #28a745;
+    padding: 10px 20px;
+    background-color: #4CAF50;
     color: white;
     border: none;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #45a049;
 }
 
-#storeList {
+#storeOptions {
     margin-top: 20px;
 }
 
-.store-item {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 5px 0;
-    cursor: pointer;
-}
-
-.store-item:hover {
-    background-color: #f0f0f0;
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
